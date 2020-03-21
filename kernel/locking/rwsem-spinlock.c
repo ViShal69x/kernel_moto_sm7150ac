@@ -46,7 +46,7 @@ void __init_rwsem(struct rw_semaphore *sem, const char *name,
 	 * Make sure we are not reinitializing a held semaphore:
 	 */
 	debug_check_no_locks_freed((void *)sem, sizeof(*sem));
-	lockdep_init_map(&sem->dep_map, name, key, 0);
+	lockdep_init_map_wait(&sem->dep_map, name, key, 0, LD_WAIT_SLEEP);
 #endif
 	sem->count = 0;
 	raw_spin_lock_init(&sem->wait_lock);
