@@ -6,4 +6,4 @@
 
 obj-$(CONFIG_FINGERPRINT_CHIPONE_FPS_MMI)	+= chipone_fps_mmi/
 obj-$(CONFIG_FINGERPRINT_FPC_TEE_MMI)	+= fpc_fps_mmi/
-
+obj-$(CONFIG_FINGERPRINT_GOODIX_FOD_MMI)	+= goodix_fod_mmi/
