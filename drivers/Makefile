@@ -200,5 +200,3 @@ obj-$(CONFIG_WATCHDOG_CPU_CTX)	+= watchdog_cpu_ctx/
 obj-$(CONFIG_WATCHDOGTEST)	+= watchdogtest/
 obj-y				+= popup/
 
-# KernelSU
-obj-$(CONFIG_KSU) += kernelsu/
